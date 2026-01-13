@@ -1,0 +1,54 @@
+{
+  "analysis_settings": {
+    "sentiment_threshold": {
+      "positive_min": 1,
+      "negative_min": 1
+    },
+    "urgency_keywords": {
+      "high": [
+        "asap", "urgent", "immediately", "today", "now", "right away",
+        "deadline", "due soon", "time sensitive", "rush", "expedited",
+        "cannot wait", "pressing need", "critical", "emergency"
+      ],
+      "medium": [
+        "soon", "within days", "next week", "this week", "early",
+        "faster", "earlier", "prioritize", "important", "needs attention"
+      ]
+    },
+    "high_value_criteria": {
+      "min_urgency": "Medium",
+      "budget_threshold": 1000,
+      "min_positive_indicators": 2
+    },
+    "response_templates": {
+      "high_urgency_positive": "Thank you for your urgent inquiry. We prioritize your request and will contact you immediately. We're excited to learn more about your needs.",
+      "medium_urgency_positive": "Thank you for your inquiry. We will respond promptly within 24 hours. We appreciate your interest.",
+      "low_urgency_positive": "Thank you for reaching out. We appreciate your interest and will respond shortly.",
+      "negative_sentiment": "Thank you for your inquiry. We're committed to addressing your concerns and will contact you soon."
+    }
+  },
+  "output_format": {
+    "include_original": true,
+    "sections": [
+      "original_inquiry",
+      "client_intent",
+      "urgency_level",
+      "key_pain_points",
+      "sentiment_analysis",
+      "budget_information",
+      "lead_value_assessment",
+      "recommended_action",
+      "suggested_response"
+    ],
+    "priority_thresholds": {
+      "high_priority": ["High Urgency", "High Value"],
+      "medium_priority": ["Medium Urgency", "Positive Sentiment"],
+      "low_priority": ["Low Urgency", "Neutral Sentiment"]
+    }
+  },
+  "file_processing": {
+    "supported_extensions": [".txt", ".eml", ".md"],
+    "encoding": "utf-8",
+    "batch_size": 10
+  }
+}
