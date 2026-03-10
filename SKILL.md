@@ -34,6 +34,3 @@ Trigger this skill when you need to:
 - **Response Suggestions**: Provides tailored follow-up recommendations
 - **Lead Scoring**: Flags high-value leads for priority attention
 
-## Scripts
-
-The skill uses helper scripts in the `scripts/` directory to analyze inquiries and generate reports.
