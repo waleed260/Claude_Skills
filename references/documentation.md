@@ -92,13 +92,6 @@ Customize the `suggest_response` function to align with your company's communica
 - Update CRM systems with extracted information
 - Follow up based on priority level indicated
 
-## Integration
-
-The skill works well with:
-- CRM systems (manually import reports)
-- Email platforms (process inquiry threads)
-- Customer support tools
-- Sales automation workflows
 
 ## Accuracy Considerations
 
